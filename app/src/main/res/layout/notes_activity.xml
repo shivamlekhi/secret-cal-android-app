@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="#E6E9EB"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ed7669">
+
+        <LinearLayout
+            android:id="@+id/new_note_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_hdpi_write_new"
+                android:layout_margin="10dp"
+                android:alpha="0.5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/NotesActivity_Heading"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:text="Notes"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:textColor="#fbe5e2"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_search"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#eb685a"
+        />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+        android:id="@+id/notes_list_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/notes_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="fill_parent"
+                    android:background="#7DCAB0" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Notes app"
+                        android:textSize="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dummy Text for a notes app"
+                        android:textColor="#aaa"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ddd" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FA4955" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maths Questions"
+                        android:textSize="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Questions For Maths Test MTH016"
+                        android:textColor="#aaa"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ddd" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="fill_parent"
+                    android:background="#72B3D4" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chemistry Notes"
+                        android:textSize="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chemistry Notes "
+                        android:textColor="#aaa"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

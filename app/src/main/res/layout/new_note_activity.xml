@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ed7669">
+
+        <LinearLayout
+            android:id="@+id/new_note_back_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_back"
+                android:layout_margin="10dp"
+                android:alpha="0.5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/NotesActivity_Heading"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:text="New Note"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:textColor="#fbe5e2"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/save_note_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_search"
+            android:layout_margin="10dp"
+            android:text="SAVE"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:alpha="0.7"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#eb685a"
+        />
+
+
+    <LinearLayout
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/new_note_number"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:hint="Number"
+            android:inputType="number"
+            android:background="@drawable/title_background"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+
+    <EditText
+        android:text=""
+        android:gravity="left|top"
+        android:id="@+id/new_note_text"
+        android:inputType="textMultiLine"
+        android:hint="Note Text"
+        android:lines="10"
+        android:background="@drawable/title_background"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
